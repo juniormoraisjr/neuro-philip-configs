@@ -1,3 +1,13 @@
-# Projeto ConfiguraÃ§Ã£o
+# Projeto de Configurações Micro Serviços
 
-Neste projeto temos a centralizaÃ§Ã£o de todas as configuraÃ§Ãµes da nossa rede de Microservices em um sÃ³ lugar, desta forma todos os arquivos de configuraÃ§Ã£o dos nossos microserviÃ§os estarÃ£o em um repositÃ³rio git.
+
+## Sobre
+
+Projeto responsável pela centralização das configurações da rede de Microservices `Neuro Philip`, desta forma todos os arquivos de configuração dos micro serviços estarão em um repositório git.
+
+
+## Serviços Configurados
+
+|Nome		|Porta		|Url												|
+|----------	|-----------|---------------------------------------------------|
+| Exemplo 	| - 		| http://localhost:9090/sample-config-app/default 	|
