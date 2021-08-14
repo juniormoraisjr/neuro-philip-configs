@@ -5,7 +5,6 @@
 
 Este projeto tem como finalidade a centralização das configurações da rede de Microservices `Neuro Philip`, desta forma todos os arquivos de configuração dos micro serviços estarão em um repositório git.
 
-
 ## Serviços Configurados
 
 Atualmente estão configurados os seguintes micro serviços:
@@ -24,9 +23,16 @@ Projeto utilizado para localizar serviços com o objetivo de balanceamento de car
 - Url
 	- http://localhost:9091/
 
-### Auth Server
+### Permission Server
 
 Projeto utilizado para ser um servidor de autorização que vai ser responsável por controlar a autenticação e autorização de nossos recursos. 
 
 - Url
 	- http://localhost:9092/oauth/token
+
+### Auth Server
+
+Projeto utilizado para ser um servidor responsável por funcionalidades de CRUD para Usuários, Perfis, Controle de Acesso, Notificações e Menu. 
+
+- Url
+	- http://localhost:9093/

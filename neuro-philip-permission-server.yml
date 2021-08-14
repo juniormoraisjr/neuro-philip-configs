@@ -1,5 +1,5 @@
 server:
-  port: 9093
+  port: 9092
 
 eureka:
   instance:
@@ -13,14 +13,15 @@ eureka:
   server:
     wait-time-in-ms-when-sync-empty: 3000
 
-authserver:
-  hostname: http://localhost:9092
-
 security:
   oauth2:
-    resource:
-      userInfoUri: ${authserver.hostname}/user
-      id: auth
+    client:
+      access-token-validity-seconds: 1800
+      authorized-grant-types: password,refresh_token
+      client-id: coderef
+      client-secret: $2a$10$p9Pk0fQNAQSesI4vuvKA0OZanDD2
+      resource-ids: resources
+      scope: read,write
 
 spring:
   datasource:
