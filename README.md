@@ -1,32 +1,43 @@
-# Projeto de ConfiguraÁıes Micro ServiÁos
+# Projeto Configura√ß√µes De Micro Servi√ßos
 
+Informa√ß√µes gerais sobre as configura√ß√µes de Micro Servi√ßos.
 
-## Sobre
+## üìã Sobre
 
-Este projeto tem como finalidade a centralizaÁ„o das configuraÁıes da rede de Microservices `Neuro Philip`, desta forma todos os arquivos de configuraÁ„o dos micro serviÁos estar„o em um repositÛrio git.
+Este projeto tem como finalidade a centraliza√ß√£o das configura√ß√µes da rede de Micro Servi√ßos `Neuro Philip`, desta forma todos os arquivos de configura√ß√£o dos Micro Servi√ßos estar√£o em um reposit√≥rio Git.
 
+## ‚öôÔ∏è Servi√ßos Configurados
 
-## ServiÁos Configurados
+Atualmente temos os seguintes Micro Servi√ßos configurados:
 
-Atualmente est„o configurados os seguintes micro serviÁos:
+#### Example Configuration App: 
 
-### Exemplo Configuration App
+Arquivo de configura√ß√£o utilizado como exemplo para testes do projeto neuro-philip-config-server.
 
-Arquivo de configuraÁ„o utilizado como exemplo para testes do projeto neuro-philip-config-server.
+```
+http://localhost:9090/sample-config-app/default
+```
 
-- Url 
-	- http://localhost:9090/sample-config-app/default
+#### Eureka Server
 
-### Eureka Server
+Projeto utilizado para localizar servi√ßos com o objetivo de balanceamento de carga e failover dos servidores.
 
-Projeto utilizado para localizar serviÁos com o objetivo de balanceamento de carga e failover de servidores.
+```
+http://localhost:9091/
+```
 
-- Url
-	- http://localhost:9091/
+#### Permission Server
 
-### Auth Server
+Projeto utilizado para controlar a autentica√ß√£o/autoriza√ß√£o de nossos recursos. 
 
-Projeto utilizado para ser um servidor de autorizaÁ„o que vai ser respons·vel por controlar a autenticaÁ„o e autorizaÁ„o de nossos recursos. 
+```
+http://localhost:9092/oauth/token
+```
 
-- Url
-	- http://localhost:9092/oauth/token
+#### Auth Server
+
+Projeto utilizado para fornecer funcionalidades de CRUD para Usu√°rios, Perfis, Controle de Acesso, Notifica√ß√µes e Menu. 
+
+```
+http://localhost:9093/
+```
