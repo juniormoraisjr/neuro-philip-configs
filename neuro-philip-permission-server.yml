@@ -23,20 +23,6 @@ security:
       resource-ids: resources
       scope: read,write
 
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    platform: mysql
-    url: jdbc:mysql://localhost:3306/neurophilip?verifyServerCertificate=false&allowPublicKeyRetrieval=true&useSSL=false&requireSSL=false&useTimezone=true&serverTimezone=UTC
-    password: root
-    username: root
-  jpa:
-    database-platform: org.hibernate.dialect.MySQL8Dialect
-    generate-ddl: false
-    hibernate:
-      ddl-auto: update
-      show-sql: false
-
 logging:
   level:
     org.springframework.security: DEBUG
