@@ -41,3 +41,11 @@ Projeto utilizado para fornecer funcionalidades de CRUD para Usuários, Perfis, 
 ```
 http://localhost:9093/
 ```
+
+#### Organization Server
+
+Projeto utilizado para fornecer funcionalidades de CRUD para Grupo Empresarial e Empresa. 
+
+```
+http://localhost:9093/
+```
