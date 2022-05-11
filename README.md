@@ -47,5 +47,14 @@ http://localhost:9093/
 Projeto utilizado para fornecer funcionalidades de CRUD para Grupo Empresarial e Empresa. 
 
 ```
-http://localhost:9093/
+http://localhost:9094/
+```
+
+
+#### Producer Message Server
+
+Projeto utilizado para produzir Mensagens em um Tópico/Fila no RabbitMQ. 
+
+```
+http://localhost:9095/
 ```
