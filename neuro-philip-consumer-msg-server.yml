@@ -1,0 +1,24 @@
+server:
+  port: 9096
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://localhost:9091/eureka/}
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
+
+authserver:
+  hostname: ${URL_NEURO_PHILIP_PERMISSION:http://localhost:9092}
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: ${authserver.hostname}/user
+      id: auth
+
+logging:
+  level:
+    org.springframework.security: DEBUG
